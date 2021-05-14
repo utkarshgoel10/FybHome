@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#testimonials {
+  /* background-color: #12172b; */
+  font-family: "Poppins", sans-serif;
+}
+
+#testimonials {
+  /* margin: 20px 40px; */
+  color: black;
+}
+
+#testimonials .heading {
+  font-size: 60px;
+  color: black;
+}
+
+#testimonials .heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+#testimonials .profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+#testimonials .profile {
+  flex-basis: 260px;
+}
+
+#testimonials .profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(0);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+#testimonials .profile:hover .profile-img {
+  filter: grayscale(100%);
+}
+
+#testimonials .user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+#testimonials .profile h5 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  /* color: rgb(128, 128, 128); */
+  color: #9678eb;
+  margin-top:1rem;
+}
+
+#testimonials .profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+    #testimonials .profiles {
+    flex-direction: column;
+  }
+
+  #testimonials .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #testimonials .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    #testimonials .heading {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+  }
+
+  #testimonials .heading span {
+    font-size: 15px;
+  }
+
+  #testimonials .profiles {
+    margin: 20px 0;
+  }
+
+  #testimonials .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
